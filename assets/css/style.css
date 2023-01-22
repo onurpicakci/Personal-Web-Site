@@ -1,3 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+:root {
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: rgb(252,252,252);
+  --primary-color:var(--secondary-color);
+  --secondary-color:rgb(41,42,45);
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+
+body{
+  background-color: rgb(41,42,45)
+}
 * {
     margin: 0;
     padding: 0;
@@ -39,4 +59,54 @@ nav h1 {
 nav a {
   color: var(--primary-color);
   transition: var(--transition);
+}
+#about{
+  max-width: 40%;
+  max-height: 70%;
+  float: left;
+
+}
+.profile-image {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  gap: 2.5rem;
+  margin-top: 5%;
+  margin-left: 5%;
+
+}
+
+.profile-image img{
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+
+#bio-div{
+  max-width: 40%;
+  max-height: 40%;
+}
+.bio{
+  max-width: 40%;
+  max-height: 40%;
+  padding: 2%;
+  border-radius: 1%;
+  box-shadow: 2px 2px 30px 2px var(--primary-shadow);
+  float: right;
+  margin-right: 10%;
+  margin-top: 14%;
+  background-color: #fcfcfc;
+}
+
+.bio h1{
+  margin-bottom: var(--bottom-margin);
+}
+
+.bio p{
+  line-height: var(--line-height);
+  padding: 2%;
+  
 }
