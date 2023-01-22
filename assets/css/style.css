@@ -4,7 +4,7 @@
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: rgb(252,252,252);
+  --bg-color: #fcfcfc;
   --primary-color:var(--secondary-color);
   --secondary-color:rgb(41,42,45);
   --primary-shadow: #8b8eaf;
@@ -15,9 +15,6 @@
   --transition: 0.3s;
 }
 
-body{
-  background-color: rgb(41,42,45)
-}
 * {
     margin: 0;
     padding: 0;
@@ -37,6 +34,7 @@ body{
   }
   
   body {
+    background-color: rgb(41,42,45);
     font-family: var(--font-family);
   }
   nav {
@@ -64,7 +62,6 @@ nav a {
   max-width: 40%;
   max-height: 70%;
   float: left;
-
 }
 .profile-image {
   display: flex;
@@ -109,4 +106,22 @@ nav a {
   line-height: var(--line-height);
   padding: 2%;
   
+}
+
+.detail{
+  background-color: var(--bg-color);
+  max-width: 100%;
+  max-height: 40%;
+  margin-top: 53%;
+  padding: 1% 8% 1% 8%;
+}
+
+.detail h2 {
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+}
+
+.detail p {
+  line-height: var(--line-height);
+  padding: 1%;
 }
